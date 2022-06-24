@@ -544,6 +544,7 @@
                                             <excludes>
                                                 <exclude>*Test</exclude>
                                                 <exclude>*IT</exclude>
+                                                <exclude>com.swardana.marabahaya.*Marabahaya*</exclude>
                                             </excludes>
                                             <limits>
                                                 <limit>
