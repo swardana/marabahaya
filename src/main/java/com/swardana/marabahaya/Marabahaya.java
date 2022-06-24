@@ -18,6 +18,7 @@
 
 package com.swardana.marabahaya;
 
+import com.swardana.marabahaya.base.FallbackExceptionHandler;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -41,6 +42,11 @@ import java.util.logging.Logger;
 public class Marabahaya extends Application {
 
     private static final Logger LOG = Logger.getLogger(Marabahaya.class.getName());
+
+    @Override
+    public void init() throws Exception {
+        Thread.setDefaultUncaughtExceptionHandler(new FallbackExceptionHandler());
+    }
 
     @Override
     public void start(final Stage stage) throws Exception {

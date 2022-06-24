@@ -222,6 +222,7 @@
                 <configuration>
                     <argLine>
                         ${surefire.jacoco.args}
+                        --add-opens com.swardana.marabahaya/com.swardana.marabahaya.base=ALL-UNNAMED
                     </argLine>
                 </configuration>
             </plugin>
@@ -568,6 +569,7 @@
                                                 <exclude>*Test</exclude>
                                                 <exclude>*IT</exclude>
                                                 <exclude>com.swardana.marabahaya.*Marabahaya*</exclude>
+                                                <exclude>com.swardana.marabahaya.base.FallbackExceptionHandler</exclude>
                                             </excludes>
                                             <limits>
                                                 <limit>
